@@ -5,6 +5,8 @@ import Topo from './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
 import Item from './componentes/Item';
 
+import Footer from './componentes/Footer';
+
 {/* como objeto foi descontruido, agente pode pegar ele diretamente como se fossem props*/}
 export default function Cesta({ topo, detalhes, itens }) {
   return <>
@@ -19,6 +21,7 @@ export default function Cesta({ topo, detalhes, itens }) {
             <Detalhes {...detalhes} />
             <Texto style={estilos.titulo}>{ itens.titulo }</Texto>
           </View>
+          <Footer></Footer>
         </>
       }}
     />
